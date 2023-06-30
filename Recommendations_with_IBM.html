@@ -17850,7 +17850,7 @@ The top 10 recommendations for user 20 are the following article names:
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p><strong>Provide your response here.</strong><br />
-since we don't know anything about this user yet, we may need to use rank-based method, or simply randomly suggest 10-20 for the users to pick from, then we can do user-user based filtering.</p>
+since we don't know anything about this user yet, we may need to use rank-based method (i.e. the get_top_articles function), or simply randomly suggest 10-20 for the users to pick from, then we can do user-user based filtering.</p>
 
 </div>
 </div>
@@ -19075,6 +19075,7 @@ class="
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p><strong>Your response here.</strong></p>
+<p>As the number of latent features increases, the fit on the test set quickly decreases, this implies that overfitting is a serious problem for this dataset. We have to rely on the simplest model, i.e. model with only 1 latent feature, for prediction.</p>
 <p>For offline testing, first split the data into trai/test/valiation set, leave the validation set out, then do regular tuning on train/test splits, evaluate the result on validation.</p>
 <p>It may be better off doing an online A/B test, and give users options to grade the recommedations.</p>
 
